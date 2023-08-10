@@ -1,4 +1,4 @@
-% Load the image
+% load the image
 original_image = imread('images/camera.png');
 % normalize image (rescale values between [0, 1]
 original_image = im2double(original_image);
