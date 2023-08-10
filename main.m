@@ -15,8 +15,8 @@ estimated_image = reduce_noise(noisy_image, sigma_n, window_size);
 % apply adaptive local noise reduction - our wiener2
 estimated_image_wiener = wiener2(noisy_image,[window_size window_size], sigma_n);
 
-% Display original, noisy, and estimated images
+% display original, noisy, and estimated images
 subplot(1, 4, 1), imshow(original_image), title('Original Image');
 subplot(1, 4, 2), imshow(noisy_image), title('Noisy Image');
-subplot(1, 4, 3), imshow(estimated_image), title('Estimated Image');
+subplot(1, 4, 3), imshow(estimated_image), title('Estimated Image - Our Implementaion');
 subplot(1, 4, 4), imshow(estimated_image_wiener), title('Estimated Image - Wiener2');
